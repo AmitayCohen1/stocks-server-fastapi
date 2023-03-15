@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*$py.class
+.DS_Store
+env/
+./myenv/
+ myenv/
+
+# Local development settings
+myenv/
+myenv
+myenv/*
+.env
+myenv/
+.idea/
+.vscode/
+*.iml
+
+# Build output
+*.egg-info/
+dist/
+build/
+*.egg-info/
+*.log
+
+# Project configuration files
+.eggs/
+instance/
+webapp.egg-info/
+celerybeat-schedule
+celerybeat.pid
