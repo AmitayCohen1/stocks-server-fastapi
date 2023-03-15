@@ -2,11 +2,7 @@ from fastapi import APIRouter, HTTPException
 from services.stocks import (get_stocks, get_stock, post_stock)
 from models import Stock
 
-
-
 stocks_router = APIRouter()
-
-
 
 #Get all stocks
 @stocks_router.get('/')
@@ -24,8 +20,7 @@ async def get_single_stock(stock_name):
     raise HTTPException(404, {'couldnt find that stock!': stock_name},)
 
     
-
-
+#Post Single Stock
 @stocks_router.post('/{stock_object}', response_model=Stock)
 async def post_single_stock(stock_object):
     response = post_stock(stock_object)
